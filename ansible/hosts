@@ -13,3 +13,6 @@ IP ansible_connection=ssh ansible_user=ansible
 
 [freebsd:vars]
 ansible_python_interpreter="/usr/local/bin/python"
+
+[windows]
+IP
