@@ -1,0 +1,3 @@
+- include: update-apt-servers.yml
+- include: update-pkgng-servers.yml
+- include: update-yum-servers.yml
