@@ -1,0 +1,15 @@
+[ansible]
+localhost ansible_connection=local
+
+[debian]
+localhost ansible_connection=local
+IP ansible_connection=ssh ansible_user=ansible
+
+[centos]
+IP ansible_connection=ssh ansible_user=ansible
+
+[freebsd]
+IP ansible_connection=ssh ansible_user=ansible
+
+[freebsd:vars]
+ansible_python_interpreter="/usr/local/bin/python"
