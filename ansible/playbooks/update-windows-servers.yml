@@ -1,0 +1,19 @@
+- hosts: windows
+  tasks:
+   - name: Search updates
+     win_updates: category_names={{ item }} state=searched log_path=c:/ansible_wu.txt
+     with_items:
+       - SecurityUpdates
+       - CriticalUpdates
+       - UpdateRollups
+
+   - name: Install updates
+     win_updates:
+       category_names: ['SecurityUpdates','CriticalUpdates','UpdateRollups']
+     register: update_result
+
+   - name: reboot if required
+     win_reboot:
+       shutdown_timeout_sec: 1200
+       reboot_timeout_sec: 1200
+     when: update_result.reboot_required
