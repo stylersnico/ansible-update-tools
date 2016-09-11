@@ -1,2 +1,5 @@
 # ansible-update-tools
-please don't use for the moment
+
+Please read: https://www.abyssproject.net/2016/09/gerer-mises-a-jour-de-bsd-linux-windows-ansible/
+
+English post coming soon ...
