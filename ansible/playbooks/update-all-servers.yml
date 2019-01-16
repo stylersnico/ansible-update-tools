@@ -1,4 +1,4 @@
-- include: update-apt-servers.yml
-- include: update-pkgng-servers.yml
-- include: update-yum-servers.yml
-- include: update-windows-servers.yml
+- import_playbook: update-apt-servers.yml
+- import_playbook: update-pkgng-servers.yml
+- import_playbook: update-yum-servers.yml
+- import_playbook: update-windows-servers.yml
