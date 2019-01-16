@@ -82,7 +82,7 @@
      mail:
        host: outbound-eu1.ppe-hosted.com
        port: 25 
-       from: me@nicolas-simond.ch
-       to: me@nicolas-simond.ch
+       from: me@me.ch
+       to: me@me.ch
        subject: Linux Servers update log
        body: "{{ lookup('file', '/etc/ansible/ansible.log') }}"
